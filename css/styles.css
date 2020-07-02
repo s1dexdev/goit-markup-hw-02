@@ -1,24 +1,6 @@
-/* Палитра цветов 
-цвет заголовков - color: #212121;
-основной текст - color: #757575;
-цвет акцента - color: #2196F3;
-цвета: герой, футер 
-и основной цвет фона - color: #FFFFFF;
-цвет фона футера: color: #2F303A;
-контакты в футере: rgba(255, 255, 255, 0.6);
-*/
-/* Fonts 
-Roboto
-400
-500
-700
-900
-Raleway
-700
-*/
-
 :root {
   --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
   --accent-color: #2196f3;
   --title-text-color: #212121;
 }
@@ -36,13 +18,18 @@ body {
 
 .button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 /* Logo */
 
@@ -93,21 +80,13 @@ body {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.hero-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 
 /* Section title */
@@ -142,7 +121,7 @@ body {
 
 .works-text {
   background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -206,13 +185,13 @@ body {
 }
 
 .logo-text-studio {
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 
 /* Address */
 
 .address-text {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -235,7 +214,7 @@ body {
 
 /* Social networks */
 .subscription {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -244,7 +223,7 @@ body {
 
 .social-networks .link {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 
 .social-networks .link:hover,
@@ -266,7 +245,7 @@ body {
 
 .list-filters .list-button:hover,
 .list-filters .list-button:focus {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
 
@@ -289,7 +268,7 @@ body {
 
 .project-description {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
