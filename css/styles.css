@@ -57,6 +57,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .contacts .link {
   text-decoration: none;
   color: inherit;
