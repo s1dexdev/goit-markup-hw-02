@@ -1,52 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header>
       <nav>
-        <a href="./index.html">Web Studio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <a class="logo" href="./index.html">
+          <span class="logo-text">Web</span> Studio</a
+        >
+        <ul class="site-nav list">
+          <li><a class="link" href="./index.html">Студия</a></li>
+          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts list">
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <!-- Основное содержание -->
     <main>
-      <section>
-        <h1>Наши работы</h1>
+      <section class="section">
+        <h1 class="hidden-title section-title">Наши работы</h1>
         <!-- Фильтры проектов -->
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <ul class="list-filters list">
+          <li><button class="list-button" type="button">Все</button></li>
+          <li><button class="list-button" type="button">Веб-сайты</button></li>
+          <li><button class="list-button" type="button">Приложения</button></li>
+          <li><button class="list-button" type="button">Дизайн</button></li>
+          <li><button class="list-button" type="button">Маркетинг</button></li>
         </ul>
         <!-- Проекты -->
-        <ul>
+        <ul class="projects list">
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/techno-crack.jpg"
                 alt="ноутбук"
                 width="370"
                 height="294"
               />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
-              <p>
+              <h2 class="projects-title">Технокряк</h2>
+              <p class="projects-type">Веб-сайт</p>
+              <p class="project-description">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
                 на защищённые сервера конкурентов.
@@ -54,16 +64,16 @@
             >
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/poster.jpg"
                 alt="игроки баскетбольных команд"
                 width="370"
                 height="294"
               />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
-              <p>
+              <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+              <p class="projects-type">Дизайн</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptates ab, magni porro quibusdam ut reiciendis laudantium
                 eius enim ratione!
@@ -71,16 +81,16 @@
             >
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/restaurant.jpg"
                 alt="лого ресторана"
                 width="370"
                 height="294"
               />
-              <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
-              <p>
+              <h2 class="projects-title">Ресторан Seafood</h2>
+              <p class="projects-type">Приложение</p>
+              <p class="project-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Tenetur alias possimus sint tempora! Iusto animi possimus
                 suscipit est error.
@@ -88,16 +98,16 @@
             </a>
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/project-prime.jpg"
                 alt="наушники"
                 width="370"
                 height="294"
               />
-              <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
-              <p>
+              <h2 class="projects-title">Проект Prime</h2>
+              <p class="projects-type">Маркетинг</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
                 expedita est vel ab amet totam officiis dolorum explicabo!
                 Reiciendis.
@@ -105,16 +115,16 @@
             </a>
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/project-boxes.jpg"
                 alt="две коробки"
                 width="370"
                 height="294"
               />
-              <h2>Проект Boxes</h2>
-              <p>Приложение</p>
-              <p>
+              <h2 class="projects-title">Проект Boxes</h2>
+              <p class="projects-type">Приложение</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Temporibus at iste tempora perferendis voluptates deserunt quia
                 ipsum eum repudiandae!
@@ -122,16 +132,16 @@
             >
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/inspiration.jpg"
                 alt="монитор"
                 width="370"
                 height="294"
               />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
-              <p>
+              <h2 class="projects-title">Inspiration has no Borders</h2>
+              <p class="projects-type">Веб-сайт</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae accusamus possimus dolorem? Odio voluptates,
                 doloremque maiores autem maxime assumenda.
@@ -139,16 +149,16 @@
             >
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/limited-edition.jpg"
                 alt="развернутая книга"
                 width="370"
                 height="294"
               />
-              <h2>Издание Limited Edition</h2>
-              <p>Дизайн</p>
-              <p>
+              <h2 class="projects-title">Издание Limited Edition</h2>
+              <p class="projects-type">Дизайн</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt repellat, sint autem officia error aliquam dolore
                 recusandae corporis inventore.
@@ -156,16 +166,16 @@
             >
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/project-lab.jpg"
                 alt="бирка"
                 width="370"
                 height="294"
               />
-              <h2>Проект LAB</h2>
-              <p>Маркетинг</p>
-              <p>
+              <h2 class="projects-title">Проект LAB</h2>
+              <p class="projects-type">Маркетинг</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Voluptates, impedit nesciunt. Mollitia laudantium nobis,
                 temporibus delectus vero laboriosam a.
@@ -173,16 +183,16 @@
             >
           </li>
           <li>
-            <a href=""
+            <a class="projects-link" href=""
               ><img
                 src="./images/portfolio/growing-business.jpg"
                 alt="ноутбук"
                 width="370"
                 height="294"
               />
-              <h2>Growing Business</h2>
-              <p>Приложение</p>
-              <p>
+              <h2 class="projects-title">Growing Business</h2>
+              <p class="projects-type">Приложение</p>
+              <p class="project-description">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Exercitationem dolore tempore animi consectetur ipsam modi
                 labore vero nobis nihil.
@@ -193,30 +203,46 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer>
+    <footer class="footer">
       <!-- Контакты -->
       <div>
-        <a href="./index.html">Web Studio</a>
-        <address>
-          г. Киев, пр-т Леси Украинки, 26<br />
-          <a href="mailto:info@example.com">info@example.com</a><br />
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+        <a class="footer-logo" href="./index.html"
+          ><span class="logo-text-web">Web</span>
+          <span class="logo-text-studio">Studio</span></a
+        >
+        <address class="address">
+          <span class="address-text">г. Киев, пр-т Леси Украинки, 26</span
+          ><br />
+          <a class="address-link" href="mailto:info@example.com"
+            >info@example.com</a
+          ><br />
+          <a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
       </div>
       <!-- Соц. сети -->
-      <div>
-        <b>Присоединяйтесь</b>
-        <ul>
-          <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-          <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-          <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-          <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+      <div class="social-networks">
+        <b class="subscription">Присоединяйтесь</b>
+        <ul class="list">
+          <li>
+            <a class="link" href="" aria-label="Ссылка на Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="link" href="" aria-label="Ссылка на Twitter">Twitter</a>
+          </li>
+          <li>
+            <a class="link" href="" aria-label="Ссылка на Facebook">Facebook</a>
+          </li>
+          <li>
+            <a class="link" href="" aria-label="Ссылка на LinkedIn">LinkedIn</a>
+          </li>
         </ul>
       </div>
       <!-- Подписка -->
       <div>
-        <b>Подпишитесь на рассылку</b>
-        <button type="button">Подписаться</button>
+        <b class="subscription">Подпишитесь на рассылку</b>
+        <button class="button" type="button">Подписаться</button>
       </div>
     </footer>
   </body>
